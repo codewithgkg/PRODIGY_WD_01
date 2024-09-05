@@ -1,0 +1,72 @@
+/* Reset some basic styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Change color on hover */
+#navbar ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Change color on scroll */
+.scrolled #navbar {
+    background-color: #555;
+}
+
+/* Main content sections */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+/* For demo, give each section a different background */
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #e2e2e2;
+}
+
+#services {
+    background-color: #ccc;
+}
+
+#contact {
+    background-color: #aaa;
+}
